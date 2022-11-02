@@ -19,4 +19,4 @@ const vegetableSchema = mongoose.Schema({
     }
 })
 
-export default mongoose.model("Vegetable", vegetableSchema);
+module.exports = mongoose.model("Vegetable", vegetableSchema);

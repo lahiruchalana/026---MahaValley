@@ -26,3 +26,7 @@ connection.once('open', () => {
 app.listen(PORT, () => {
     console.log(`Server is running on : ${PORT}`)
 })
+
+const vegetableRouter = require("./routes/vegetableRoute");
+
+app.use('/api/vegetables', vegetableRouter);
